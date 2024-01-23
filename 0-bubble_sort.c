@@ -1,31 +1,33 @@
 #include "sort.h"
-
 /**
- * bubble_sort - func for sort array
- * @array: array of int
- * @size: size of array
+ *bubble_sort - Function that sorts an array of ints
+ *using bubble sort algorithm
+ *
+ *@array: array of ints
+ *@size: size of array
+ *
  */
 void bubble_sort(int *array, size_t size)
 {
-	int temp;
-	size_t i, k;
+	int TMEP;
+	size_t X, Y;
 
-	if (array || !size)
+	if (!array || !size)
 		return;
 
-	i = 0;
-	while (i < size)
+	X = 0;
+	while (X < size)
 	{
-		for (k = 0; k < size - 1; k++)
+		for (Y = 0; Y < size - 1; Y++)
 		{
-			if (array[k] > array[k + 1])
+			if (array[Y] > array[Y + 1])
 			{
-				temp = array[k];
-				array[k] = array[k + 1];
-				array[k + 1] = temp;
+				TMEP = array[Y];
+				array[Y] = array[Y + 1];
+				array[Y + 1] = TMEP;
 				print_array(array, size);
 			}
 		}
-		i++;
+		X++;
 	}
 }

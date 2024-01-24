@@ -2,8 +2,8 @@
 
 /**
  *swap - swaps 2 nodes in a doubly-linked list
- *@a: address of first node
- *@b: address of second node
+ * @a: address of first node
+ * @b: address of second node
 */
 void swap(listint_t *a, listint_t *b)
 {
